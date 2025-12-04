@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Creativ'Ani – Personnalisations</title>
+<style>
+  :root{
+    --rose:#f7e3ea;
+    --rose-gold:#d8a7a0;
+    --dark:#5a4044;
+    --white:#ffffff;
+  }
+
+  body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:var(--rose);
+    color:var(--dark);
+  }
+
+  header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    background:var(--white);
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    position:sticky;
+    top:0;
+    z-index:10;
+  }
+
+  .logo{
+    font-size:28px;
+    font-weight:700;
+    color:var(--rose-gold);
+    font-family:'Georgia',serif;
+    letter-spacing:1px;
+  }
+
+  nav a{
+    margin-left:20px;
+    color:var(--dark);
+    text-decoration:none;
+    font-weight:600;
+    font-size:14px;
+  }
+
+  .hero{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(180deg,var(--rose),#fbeff4);
+  }
+
+  .hero h1{
+    font-size:48px;
+    color:var(--dark);
+    margin-bottom:10px;
+  }
+
+  .hero p{
+    font-size:18px;
+    opacity:0.8;
+    margin-bottom:30px;
+  }
+
+  .btn{
+    display:inline-block;
+    background:var(--rose-gold);
+    padding:14px 32px;
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+  }
+
+  .section{
+    padding:60px 40px;
+    text-align:center;
+  }
+
+  .section h2{
+    font-size:36px;
+    margin-bottom:40px;
+  }
+
+  .products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    max-width:1200px;
+    margin:0 auto;
+  }
+
+  .card{
+    background:var(--white);
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+  }
+
+  .card:hover{
+    transform:translateY(-5px);
+  }
+
+  .card img{
+    width:100%;
+    border-radius:14px;
+    margin-bottom:15px;
+  }
+
+  footer{
+    padding:30px;
+    text-align:center;
+    background:var(--white);
+    margin-top:60px;
+  }
+
+  footer p{
+    opacity:0.7;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Creativ'Ani</div>
+  <nav>
+    <a href="#bougies">Bougies</a>
+    <a href="#habits">Vêtements</a>
+    <a href="#mugs">Sublimation</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Personnalisation Chic & Girly</h1>
+  <p>Bougies personnalisées, habits adultes & enfants, mugs sublimés et cadeaux uniques.</p>
+  <a class="btn" href="#bougies">Découvrir la boutique</a>
+</section>
+
+<section class="section" id="bougies">
+  <h2>Bougies Personnalisées</h2>
+  <div class="products">
+    <div class="card">
+      <img src="https://i.etsystatic.com/30510537/r/il/393c84/5307793114/il_1588xN.5307793114_fe3w.jpg" alt="Bougie" />
+      <h3>Bougie parfumée personnalisée</h3>
+      <p>Ajoutez prénom, message ou photo.</p>
+      <a class="btn" href="#">Commander</a>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x250" alt="Bougie luxe" />
+      <h3>Bougie luxe rose gold</h3>
+      <p>Collection chic et élégante.</p>
+      <a class="btn" href="#">Commander</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="habits">
+  <h2>Vêtements Adultes & Enfants</h2>
+  <div class="products">
+    <div class="card">
+      <img src="https://via.placeholder.com/300x250" alt="T-shirt" />
+      <h3>T‑shirt personnalisé</h3>
+      <p>Design, prénom, broderie ou impression.</p>
+      <a class="btn" href="#">Commander</a>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x250" alt="Body bébé" />
+      <h3>Body bébé personnalisé</h3>
+      <p>Cadeau parfait pour naissance.</p>
+      <a class="btn" href="#">Commander</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="mugs">
+  <h2>Mugs & Sublimation</h2>
+  <div class="products">
+    <div class="card">
+      <img src="https://via.placeholder.com/300x250" alt="Mug sublimé" />
+      <h3>Mug sublimé</h3>
+      <p>Votre photo ou texte en impression durable.</p>
+      <a class="btn" href="#">Commander</a>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x250" alt="Gourde personnalisée" />
+      <h3>Gourde personnalisée</h3>
+      <p>Idéal pour un cadeau chic et utile.</p>
+      <a class="btn" href="#">Commander</a>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <p>© 2025 Girly Luxe – Créations personnalisées</p>
+</footer>
+
+</body>
+</html>
